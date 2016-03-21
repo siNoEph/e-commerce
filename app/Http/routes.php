@@ -13,6 +13,8 @@
 
 $app->get('/', 'HomeController@index');
 
+$app->get('supplier/{supplier_slug}/product/{id}', 'ProductController@show');
+
 $app->group(['namespace' => 'App\Http\Controllers\Frontend\Auth'], function () use ($app) {
     // Login
     $app->get('login', 'LoginController@user');
@@ -36,6 +38,7 @@ $app->group(['namespace' => 'App\Http\Controllers\Frontend\Admin', 'prefix' => '
     $app->get('category', 'CategoryController@index');
     $app->get('product', 'ProductController@index');
     $app->get('supplier', 'SupplierController@index');
+    $app->get('config', 'ConfigController@index');
 });
 
 $app->group(['namespace' => 'App\Http\Controllers\Frontend\Supplier', 'prefix' => 'supplier'], function () use ($app) {
