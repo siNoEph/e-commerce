@@ -127,7 +127,7 @@ a {
   width: 118%;
   height: 42px;
   overflow: hidden;
-  background: url(../../assets/images/icon/arrow-down.svg) no-repeat right #F8F8F8;
+  background: url(../assets/images/icon/arrow-down.svg) no-repeat right #F8F8F8;
   -webkit-appearance: none;
   -moz-appearance: none;
   padding: 2px 30px 2px 2px;
@@ -645,7 +645,7 @@ header {
         margin-left: 15px; }
 
 #content-login {
-  background: url(../../assets/images/lil_fiber.png); }
+  background: url(../assets/images/lil_fiber.png); }
   #content-login ul {
     list-style: none;
     padding-left: 0px; }
