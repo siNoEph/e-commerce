@@ -111,22 +111,26 @@ class ProductController extends Controller
     }
 
     public function showBySupplier()
-    {
+    {    
+        $config         = config('amtekcommerce.product_image');
         $user           = Auth::user();
         $supplier_id    = $user->supplier->first()->id;
-        $products   = Product::where('supplier_id', $supplier_id)->get();
+        $products       = Product::where('supplier_id', $supplier_id)->get();
+        $image_url      = $config['url'] . '/sup_' . $supplier_id;
 
         if ($products) {
             return [
                 'status'    => 'success',
                 'message'   => 'Produk tersedia.',
-                'products'  => $products
+                'products'  => $products,
+                'image_url' => $image_url
             ];
         } else {
             return [
                 'status'    => 'failed',
                 'message'   => 'Produk tidak tersedia.',
-                'products'  => null
+                'products'  => null,
+                'image_url' => null
             ];
         }
     }
