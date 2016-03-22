@@ -23,7 +23,7 @@ class Product extends Model
         'supplier_id'
     ];
 
-    protected $with = ['category', 'tags'];
+    protected $with = ['category', 'tags', 'images'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -47,5 +47,10 @@ class Product extends Model
     public function tags()
     {
         return $this->morphToMany(Tag::class, 'taggable');
+    }
+
+    public function images()
+    {
+        return $this->hasMany(ProductImage::class);
     }
 }
