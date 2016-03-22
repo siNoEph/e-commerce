@@ -267,6 +267,7 @@ header {
     margin-bottom: 0px;
     background-color: #FFF;
     min-height: 0px;
+    border-bottom: 1px solid #DDDDDD;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -o-border-radius: 0px;
