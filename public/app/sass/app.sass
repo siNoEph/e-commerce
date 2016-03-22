@@ -114,6 +114,7 @@ body
 	border: 2px solid $white
 
 .btn
+	+border-radius(0px)
 	outline: none
 	&:focus,
 	&:active
@@ -164,7 +165,7 @@ a
 		width: 118%
 		height: 42px
 		overflow: hidden
-		background: url(../../assets/images/icon/arrow-down.svg) no-repeat right $grey
+		background: url(../assets/images/icon/arrow-down.svg) no-repeat right $grey
 		-webkit-appearance: none
 		-moz-appearance: none
 		padding: 2px 30px 2px 2px
@@ -600,6 +601,10 @@ header
 				border-bottom: 1px solid $grey-black
 				margin-bottom: $margin-bottom + 15
 
+				h3
+					font-weight: 600
+					color: $aspalt-light
+
 			img
 				max-width: 300px
 				object-fit: cover
@@ -629,8 +634,8 @@ header
 
 							.img-comment
 								img
-									width: 60px
-									height: 60px
+									width: 50px
+									height: 50px
 									+border-radius(100%)
 									margin-right: $margin-right + 5
 									margin-top: $margin-top + 5
@@ -644,6 +649,9 @@ header
 									font-size: 10px
 
 								p
+									font-size: 12px
+
+								textarea
 									font-size: 12px
 
 	.popular-supplier
@@ -695,7 +703,7 @@ header
 
 // CONTENT-LOGIN
 #content-login
-	background: url(../../assets/images/lil_fiber.png)
+	background: url(../assets/images/lil_fiber.png)
 
 	ul
 		list-style: none
@@ -992,13 +1000,14 @@ header
 			.widget-supplier
 				margin-top: $margin-top + 15
 				margin-bottom: $margin-bottom + 15
+				border: 1px solid $grey
 
 				.widget-supplier-heading
 					padding: $padding + 5
 					background-color: $grey
-					+border-radius(4px)
-					h4
+					h5
 						margin: $margin - 5
+						font-weight: 600
 
 				.widget-supplier-content
 					display: inline-flex
@@ -1011,26 +1020,40 @@ header
 						margin-right: $margin-right + 5 !important
 						+border-radius(100%)
 
-					h5
-						margin: $margin -5
+					.supplier-profile
+						text-align: center
+
+						h5
+							margin: $margin -5
 
 			.widget-shipping
 				margin-top: $margin-top + 15
-				margin-bottom: $margin-bottom + 15
+				margin-bottom: $margin-bottom + 5
+				border: 1px solid $grey
+
+				.list-block
+					display: inline-block
+
+				.shipping
+					width: 30%
+					color: $aspalt-light
+
+				.fitur-shipping
+					text-align: center
+					color: $aspalt-light
+					width: 30%
 
 				.widget-shipping-heading
 					padding: $padding + 5
 					background-color: $grey
-					+border-radius(4px)
-					h4
-						margin: $margin - 5
+					font-size: 12px
 
 				.widget-shipping-content
+					padding-left: $padding-left + 5
+					padding-right: $padding-right + 5
 					img
-						width: 80px
-						height: 80px
-						margin-top: $margin-top + 5 !important
-						margin-right: $margin-right + 5 !important
+						width: 50px
+						height: 50px
 
 /* #5.FOOTER */
 .footer
