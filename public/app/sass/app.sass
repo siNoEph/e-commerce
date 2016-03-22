@@ -62,7 +62,7 @@ $padding-left: 5px
 /* #1.GENERAL */
 body
 	background-color: $white
-	font-family: roboto
+	font-family: arial
 
 .container
 	max-width: 980px
@@ -77,6 +77,7 @@ body
 
 .btn-default
 	font-weight: 600
+	border-color: $grey-black
 
 .btn-basic
 	background-color: $orange-light
@@ -154,10 +155,8 @@ a
 	&:focus,
 	&:active
 		border-bottom: 2px solid $aspalt
-		font-size: 20px
 		color: $aspalt
 		text-decoration: none
-		box-shadow: 0 2px 4px $shadow
 		+transition(0.3s)
 
 .select
@@ -277,7 +276,12 @@ a
 
 .breadcrumb
 	list-style: none
-	background-color: $grey
+	padding: 8px 15px
+	margin: 0 0 18px
+	list-style: none
+	background-color: #f7f7f7
+	font-size: 0.85em
+	color: #999
 	a
 		color: $aspalt-light
 
@@ -604,6 +608,40 @@ header
 			.content-detail-product
 				.detail-comment
 					margin-top: $margin-top + 55
+					box-shadow: 0 3px 3px rgba(0,0,0,0.03),-3px 0 4px rgba(0,0,0,0.03),3px 0 4px rgba(0,0,0,0.03)
+
+					.tab-content
+						padding: $padding + 10
+						border-left: 1px solid $grey
+						border-bottom: 1px solid $grey
+						border-right: 1px solid $grey
+
+						h4
+							border-bottom: 1px solid $grey
+							line-height: 3em
+							margin-top: $margin-top - 5
+
+						.comment-item
+							display: inline-flex
+							width: 100%
+							border-bottom: 1px solid $grey
+
+							.img-comment
+								img
+									width: 60px
+									height: 60px
+									+border-radius(100%)
+									margin-right: $margin-right + 5
+									margin-top: $margin-top + 5
+							.profile-comment
+								h5
+									font-weight: 600
+
+								h6
+									font-size: 10px
+
+								p
+									font-size: 12px
 
 	.popular-supplier
 		padding-top: $padding-top + 20
@@ -887,6 +925,8 @@ header
 
 	.sidebar
 		margin-bottom: $margin-bottom + 15
+		box-shadow: 0 3px 3px rgba(0,0,0,0.03),-3px 0 4px rgba(0,0,0,0.03),3px 0 4px rgba(0,0,0,0.03)
+		background-color: $grey
 
 		.widget
 			padding: $padding + 5
@@ -938,6 +978,8 @@ header
 						height: 30px
 						width: 50px
 						text-align: center
+						border: 1px solid $grey-black
+						background-color: $white
 
 					.input-group
 						margin-top: $margin-top + 5
