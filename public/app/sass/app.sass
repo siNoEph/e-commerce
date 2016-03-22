@@ -62,7 +62,7 @@ $padding-left: 5px
 /* #1.GENERAL */
 body
 	background-color: $white
-	font-family: arial
+	font-family: Roboto, sans-serif
 
 .container
 	max-width: 980px
@@ -608,6 +608,7 @@ header
 			.content-detail-product
 				.detail-comment
 					margin-top: $margin-top + 55
+					margin-bottom: $margin-bottom + 15
 					box-shadow: 0 3px 3px rgba(0,0,0,0.03),-3px 0 4px rgba(0,0,0,0.03),3px 0 4px rgba(0,0,0,0.03)
 
 					.tab-content
@@ -926,7 +927,7 @@ header
 	.sidebar
 		margin-bottom: $margin-bottom + 15
 		box-shadow: 0 3px 3px rgba(0,0,0,0.03),-3px 0 4px rgba(0,0,0,0.03),3px 0 4px rgba(0,0,0,0.03)
-		background-color: $grey
+		background-color: $white
 
 		.widget
 			padding: $padding + 5
@@ -957,7 +958,6 @@ header
 				margin-bottom: $margin-bottom + 15
 				padding: $padding + 15
 				+border-radius(4px)
-				background-color: $grey
 
 				.price
 					h4
@@ -1005,11 +1005,30 @@ header
 						width: 80px
 						height: 80px
 						object-fit: cover
+						margin-top: $margin-top + 5 !important
 						margin-right: $margin-right + 5 !important
 						+border-radius(100%)
 
 					h5
 						margin: $margin -5
+
+			.widget-shipping
+				margin-top: $margin-top + 15
+				margin-bottom: $margin-bottom + 15
+
+				.widget-shipping-heading
+					padding: $padding + 5
+					background-color: $grey
+					+border-radius(4px)
+					h4
+						margin: $margin - 5
+
+				.widget-shipping-content
+					img
+						width: 80px
+						height: 80px
+						margin-top: $margin-top + 5 !important
+						margin-right: $margin-right + 5 !important
 
 /* #5.FOOTER */
 .footer
