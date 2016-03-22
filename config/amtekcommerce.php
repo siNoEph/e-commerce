@@ -15,7 +15,8 @@ return [
     ],
 
     'product_image'	=> [
-    	'dir'		=> storage_path('app/product_images'),
+    	'dir'		=> public_path('app/product_images'),
+        'url'       => url('/app/product_images/'),
     	'resize'	=> [300, 300]
     ],
     
