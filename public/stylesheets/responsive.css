@@ -38,7 +38,10 @@
     #overlay-box img {
       width: 250px;
       height: 250px;
-      object-fit: cover; } }
+      object-fit: cover; }
+
+  #navbar-main .navbar-right .cart {
+    float: left !important; } }
 @media (min-width: 640px) and (max-width: 992px) {
   .form-search {
     width: 105% !important;

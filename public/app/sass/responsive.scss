@@ -90,6 +90,14 @@ $padding-left: 5px;
 		}
 	}
 
+	#navbar-main {
+		.navbar-right {
+			.cart {
+				float: left !important
+			}
+		}
+	}
+
 }
 // End: 640px
 
