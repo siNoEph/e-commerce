@@ -38,13 +38,16 @@ class ProductImageController extends Controller
 
         $product_id     = $request->get('product_id');
 
-        $base64_image   = $request->file('base64_image');
+        $base64_image   = $request->get('base64_image');
 
         $image_product  = $this->saveImage($product_id, $base64_image);
 
         $image_product = ProductImage::create($image_product);
-
-        return $image_product;
+        
+        return [
+            'status'    => 'success',
+            'images'    => $image_product
+        ];
     }
 
     /**
@@ -271,7 +274,8 @@ class ProductImageController extends Controller
 
         $supplierCode   = $supplier->code;
         $productCode    = $product->code;
-        $fileType       = $base64_image->guessExtension();
+        // $fileType       = $base64_image->guessExtension();
+        $fileType       = 'jpeg';   // sementara didefault dengan format jpeg
         $filename       = $supplierCode . '_' . $productCode . '_' . date('YmdHis', time()) . '.' . $fileType;
 
         $upload_dir     = $config['dir'] . '/sup_' . $supplier->id;
@@ -294,7 +298,7 @@ class ProductImageController extends Controller
             'name'          => $filename,
             'filetype'      => $fileType,
             'filesize'      => $filesize,
-            'product_id'    => $product_id
+            'product_id'    => $product_id,
         ];
 
         return $image_product;
