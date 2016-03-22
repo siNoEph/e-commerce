@@ -75,6 +75,10 @@ body {
   border: 2px solid #FFF; }
 
 .btn {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
   outline: none; }
   .btn:focus, .btn:active {
     outline: none; }
@@ -565,6 +569,9 @@ header {
     #content .main-content .content-detail .heading-detail-product {
       border-bottom: 1px solid #DDDDDD;
       margin-bottom: 20px; }
+      #content .main-content .content-detail .heading-detail-product h3 {
+        font-weight: 600;
+        color: #293648; }
     #content .main-content .content-detail img {
       max-width: 300px;
       object-fit: cover;
