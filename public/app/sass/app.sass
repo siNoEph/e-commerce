@@ -17,7 +17,7 @@ $black: #000
 $grey: #F8F8F8
 $grey-black: #DDDDDD
 $shadow: #D2C2C2
-$dark: #E7E7E7
+$dark: #ECF0F1
 $aspalt: #243143
 $aspalt-light: #293648
 $aspalt-dark: #1B2A3F
@@ -73,7 +73,7 @@ body
 
 .btn-primary
 	font-weight: 600
-	background-color: #446592
+	background-color: #34495e
 
 .btn-default
 	font-weight: 600
@@ -165,7 +165,7 @@ a
 		width: 118%
 		height: 42px
 		overflow: hidden
-		background: url(../assets/images/icon/arrow-down.svg) no-repeat right $grey
+		background: url(../assets/images/icon/arrow-down.png) no-repeat right $grey
 		-webkit-appearance: none
 		-moz-appearance: none
 		padding: 2px 30px 2px 2px
@@ -296,6 +296,7 @@ header
 			margin-bottom: $margin-bottom - 5
 			background-color: $white
 			min-height: 0px
+			border-bottom: 1px solid $grey-black
 			+border-radius(0px)
 			z-index: 2
 		
@@ -362,7 +363,7 @@ header
 				margin-top: $margin-top + 15
 
 				.cart-content
-					border: 4px solid $aspalt-dark
+					border: 2px solid $aspalt-dark
 					background-color: $aspalt-light
 					margin-bottom: $margin-bottom + 15
 					padding: $padding + 3
@@ -373,7 +374,7 @@ header
 							width: 85px
 							height: 95px
 							object-fit: cover
-							border: 4px solid $aspalt-dark
+							border: 2px solid $aspalt-dark
 
 					.cart-title
 						padding: 6%
@@ -646,7 +647,7 @@ header
 									font-weight: 600
 
 								h6
-									font-size: 10px
+									font-size: 12px
 
 								p
 									font-size: 12px
@@ -945,8 +946,11 @@ header
 
 			.widget-heading
 				h3
+					padding: $padding + 5
 					margin-top: $margin-top - 5
 					margin-bottom: $margin-bottom + 15
+					background-color: RGBA(36, 49, 67, 0.63)
+					color: $white
 					font-size: 18px
 
 			.widget-content
@@ -1063,7 +1067,7 @@ header
 
 	.footer-top
 		padding-bottom: $padding-bottom + 20
-		border-bottom: 2px solid $grey-black
+		border-bottom: 1px solid $grey-black
 		text-align: center
 		h4
 			font-weight: 600
@@ -1078,7 +1082,7 @@ header
 
 	.footer-content
 		padding-bottom: $padding-bottom + 10
-		border-bottom: 2px solid $grey-black
+		border-bottom: 1px solid $grey-black
 		h4
 			margin-top: $margin-top + 30
 			margin-bottom: $margin-bottom + 15
