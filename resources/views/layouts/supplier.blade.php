@@ -314,7 +314,6 @@
 
                         <!-- Content area -->
                         <div class="content">
-
                             @yield('content', 'Blank page')
 
                             <!-- Footer -->
@@ -351,7 +350,9 @@
 <!-- Theme JS files -->
     @yield('scripts')
 
+    <script type="text/javascript" src="{{ asset('assets/js/plugins/media/fancybox.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/core/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/pages/gallery.js') }}"></script>
 <!-- /theme JS files -->
 
 </body>
