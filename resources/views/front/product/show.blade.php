@@ -105,7 +105,8 @@
                                 </div>
                                 <!-- end:/widget-detail-product -->
                                 <a href="#" class="btn btn-basic btn-block">Buy</a>
-                                <a href="#" class="btn btn-primary btn-block"><i class="fa fa-cart-arrow-down"></i> Add to cart</a>
+                                <!-- <a href="#" class="btn btn-primary btn-block"><i class="fa fa-cart-arrow-down"></i> Add to cart</a> -->
+                                <add-to-cart></add-to-cart>
 
                                 <!-- start:widget-supplier -->
                                 <div class="widget-supplier">
