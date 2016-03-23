@@ -1,4 +1,4 @@
-<nav class="navbar navbar-cart">
+<nav class="navbar-cart">
 	<div class="container">
 		<div class="collapse" id="collapseChart">
 			<div class="well">
