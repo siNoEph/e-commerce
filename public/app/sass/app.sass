@@ -15,6 +15,7 @@
 $white: #FFF
 $black: #000
 $grey: #F8F8F8
+$grey-light: #EEEEEE
 $grey-black: #DDDDDD
 $shadow: #D2C2C2
 $dark: #ECF0F1
@@ -66,6 +67,9 @@ body
 
 .container
 	max-width: 980px
+
+h3
+	margin-top: $margin-top + 5
 
 *
 	a
@@ -278,7 +282,7 @@ a
 .breadcrumb
 	list-style: none
 	padding: 8px 15px
-	margin: 0 0 18px
+	margin: 0 0 10px
 	list-style: none
 	background-color: #f7f7f7
 	font-size: 0.85em
@@ -587,7 +591,7 @@ header
 
 	.main-content
 		background-color: $white
-		padding: $padding + 15
+		padding: $padding + 10
 
 		.heading-title
 			padding: $padding
@@ -598,11 +602,13 @@ header
 					width: 100%
 
 		.content-detail
+			border-top: 1px solid $grey-light
+
 			.heading-detail-product
-				border-bottom: 1px solid $grey-black
 				margin-bottom: $margin-bottom + 15
 
 				h3
+					margin-top: $margin-top + 5
 					font-weight: 600
 					color: $aspalt-light
 
