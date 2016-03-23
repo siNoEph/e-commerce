@@ -17,6 +17,9 @@ body {
 .container {
   max-width: 980px; }
 
+h3 {
+  margin-top: 10px; }
+
 * a {
   color: #293648; }
 
@@ -251,7 +254,7 @@ a {
 .breadcrumb {
   list-style: none;
   padding: 8px 15px;
-  margin: 0 0 18px;
+  margin: 0 0 10px;
   list-style: none;
   background-color: #f7f7f7;
   font-size: 0.85em;
@@ -562,57 +565,59 @@ header {
   padding-bottom: 5px; }
   #content .main-content {
     background-color: #FFF;
-    padding: 20px; }
+    padding: 15px; }
     #content .main-content .heading-title {
       padding: 5px; }
     #content .main-content .list-product .list-content .item-product {
       width: 100%; }
-    #content .main-content .content-detail .heading-detail-product {
-      border-bottom: 1px solid #DDDDDD;
-      margin-bottom: 20px; }
-      #content .main-content .content-detail .heading-detail-product h3 {
-        font-weight: 600;
-        color: #293648; }
-    #content .main-content .content-detail img {
-      max-width: 300px;
-      object-fit: cover;
-      margin: 0 auto; }
-    #content .main-content .content-detail .content-detail-product .detail-comment {
-      margin-top: 60px;
-      margin-bottom: 20px;
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.03), -3px 0 4px rgba(0, 0, 0, 0.03), 3px 0 4px rgba(0, 0, 0, 0.03); }
-      #content .main-content .content-detail .content-detail-product .detail-comment .tab-content {
-        padding: 15px;
-        border-left: 1px solid #F8F8F8;
-        border-bottom: 1px solid #F8F8F8;
-        border-right: 1px solid #F8F8F8; }
-        #content .main-content .content-detail .content-detail-product .detail-comment .tab-content h4 {
+    #content .main-content .content-detail {
+      border-top: 1px solid #EEEEEE; }
+      #content .main-content .content-detail .heading-detail-product {
+        margin-bottom: 20px; }
+        #content .main-content .content-detail .heading-detail-product h3 {
+          margin-top: 10px;
+          font-weight: 600;
+          color: #293648; }
+      #content .main-content .content-detail img {
+        max-width: 300px;
+        object-fit: cover;
+        margin: 0 auto; }
+      #content .main-content .content-detail .content-detail-product .detail-comment {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.03), -3px 0 4px rgba(0, 0, 0, 0.03), 3px 0 4px rgba(0, 0, 0, 0.03); }
+        #content .main-content .content-detail .content-detail-product .detail-comment .tab-content {
+          padding: 15px;
+          border-left: 1px solid #F8F8F8;
           border-bottom: 1px solid #F8F8F8;
-          line-height: 3em;
-          margin-top: 0px; }
-        #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item {
-          display: inline-flex;
-          width: 100%;
-          border-bottom: 1px solid #F8F8F8; }
-          #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .img-comment img {
-            width: 50px;
-            height: 50px;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            -o-border-radius: 100%;
-            border-radius: 100%;
-            margin-right: 10px;
-            margin-top: 10px; }
-          #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment {
-            width: 100%; }
-            #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment h5 {
-              font-weight: 600; }
-            #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment h6 {
-              font-size: 12px; }
-            #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment p {
-              font-size: 12px; }
-            #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment textarea {
-              font-size: 12px; }
+          border-right: 1px solid #F8F8F8; }
+          #content .main-content .content-detail .content-detail-product .detail-comment .tab-content h4 {
+            border-bottom: 1px solid #F8F8F8;
+            line-height: 3em;
+            margin-top: 0px; }
+          #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item {
+            display: inline-flex;
+            width: 100%;
+            border-bottom: 1px solid #F8F8F8; }
+            #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .img-comment img {
+              width: 50px;
+              height: 50px;
+              -webkit-border-radius: 100%;
+              -moz-border-radius: 100%;
+              -o-border-radius: 100%;
+              border-radius: 100%;
+              margin-right: 10px;
+              margin-top: 10px; }
+            #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment {
+              width: 100%; }
+              #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment h5 {
+                font-weight: 600; }
+              #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment h6 {
+                font-size: 12px; }
+              #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment p {
+                font-size: 12px; }
+              #content .main-content .content-detail .content-detail-product .detail-comment .tab-content .comment-item .profile-comment textarea {
+                font-size: 12px; }
   #content .popular-supplier {
     padding-top: 25px;
     padding-bottom: 40px;
