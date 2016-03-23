@@ -12,6 +12,7 @@
 */
 
 $app->get('/', 'HomeController@index');
+$app->get('product/{id}', 'HomeController@show');
 
 $app->get('supplier/{supplier_slug}/product/{id}', 'ProductController@show');
 

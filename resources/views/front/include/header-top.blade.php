@@ -15,13 +15,13 @@
                         <img src="{{ asset('assets/images/avatar.png') }}" alt="">
                     </a>
                 </div>
-                <div class="cart pull-right">
+                <!-- <div class="cart pull-right">
 					<a href="#collapseChart" data-toggle="collapse">
 						<img src="{{ asset('assets/images/icon/chart.svg') }}" alt="">
 						<p>3</p>
 					</a>
-					
-				</div>
+				</div> -->
+				<shopping-cart></shopping-cart>
 			</div>
 		</div>
 	</div>

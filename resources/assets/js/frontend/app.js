@@ -1,6 +1,9 @@
 var Loading = require('./components/Loading.vue');
 var Content = require('./components/Content.vue');
 var config = require('./components/Config.vue');
+var PopularProducts = require('./components/PopularProducts.vue');
+var AddToCart   = require('./components/AddToCart.vue');
+var ShoppingCart = require('./components/ShoppingCart.vue');
 
 module.exports = {
 	http: {
@@ -9,7 +12,10 @@ module.exports = {
 	},
     components: {
         'loading': Loading,
-        'content': Content
+        'content': Content,
+        'popular': PopularProducts,
+        'add-to-cart': AddToCart,
+        'shopping-cart': ShoppingCart
     },
     methods: {
     	loading(type, timeout) {
