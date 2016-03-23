@@ -8,11 +8,11 @@
  * #4.SIDEBAR
  * #5.FOOTER  
  */
-@import url("../fonts/opensans/style.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 /* #1.GENERAL */
 body {
   background-color: #FFF;
-  font-family: Roboto, sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .container {
   max-width: 980px; }
@@ -546,7 +546,7 @@ header {
       margin-left: -60px; }
   header #header-content {
     background-color: #FFF;
-    border-bottom: 1px solid #DDDDDD; }
+    border-bottom: 1px solid #ECF0F1; }
     header #header-content .navbar-nav {
       font-weight: 600; }
       header #header-content .navbar-nav .dropdown .dropdown-menu {
@@ -655,7 +655,7 @@ header {
         margin-left: 15px; }
 
 #content-login {
-  background: url(../assets/images/lil_fiber.png); }
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAIElEQVQIW2NcO3OtZHB68HMGNAASZ0QXROYPiCQ+1wIA8J8MIJcsRXEAAAAASUVORK5CYII=); }
   #content-login ul {
     list-style: none;
     padding-left: 0px; }
@@ -898,6 +898,10 @@ header {
   .main-content .sidebar .widget {
     padding: 10px;
     margin-bottom: 25px; }
+    .main-content .sidebar .widget .rating-container {
+      text-align: center; }
+      .main-content .sidebar .widget .rating-container .caption {
+        display: none; }
     .main-content .sidebar .widget .widget-heading h3 {
       padding: 10px;
       margin-top: 0px;
@@ -951,7 +955,8 @@ header {
           border: 1px solid #DDDDDD;
           background-color: #FFF; }
         .main-content .sidebar .widget .widget-detail-product .count .input-group {
-          margin-top: 10px; }
+          margin-top: 10px;
+          z-index: 0; }
         .main-content .sidebar .widget .widget-detail-product .count .input-group-btn {
           width: 0px; }
     .main-content .sidebar .widget .widget-supplier {
