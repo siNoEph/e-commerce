@@ -38,9 +38,17 @@ class ProductImageController extends Controller
 
         $product_id     = $request->get('product_id');
 
+        if ($request->hasFile('base64_image')) {
+            $base64_image   = $request->file('base64_image');
+            $filetype       = $base64_image->getClientOriginalExtension();
+        } else {
+            $base64_image   = $request->get('base64_image');
+            $filetype       = 'jpg';
+        }
+
         $base64_image   = $request->get('base64_image');
 
-        $image_product  = $this->saveImage($product_id, $base64_image);
+        $image_product  = $this->saveImage($product_id, $base64_image, $filetype);
 
         $image_product = ProductImage::create($image_product);
         
@@ -116,7 +124,6 @@ class ProductImageController extends Controller
         if ($product_image) {
             $product_id     = $request->get('product_id');
             $base64_image   = $request->file('base64_image');
-            $image_product  = $this->saveImage($product_id, $base64_image);
 
             $product        = Product::find($product_id);
             $supplier       = $product->supplier;
@@ -262,7 +269,7 @@ class ProductImageController extends Controller
      * @param  [type] $base64_image [description]
      * @return [type]               [description]
      */
-    private function saveImage($product_id, $base64_image)
+    private function saveImage($product_id, $base64_image, $filetype)
     {
         $product        = Product::find($product_id);
         $supplier       = $product->supplier;
@@ -274,9 +281,8 @@ class ProductImageController extends Controller
 
         $supplierCode   = $supplier->code;
         $productCode    = $product->code;
-        // $fileType       = $base64_image->guessExtension();
-        $fileType       = 'jpeg';   // sementara didefault dengan format jpeg
-        $filename       = $supplierCode . '_' . $productCode . '_' . date('YmdHis', time()) . '.' . $fileType;
+
+        $filename       = $supplierCode . '_' . $productCode . '_' . date('YmdHis', time()) . '.' . $filetype;
 
         $upload_dir     = $config['dir'] . '/sup_' . $supplier->id;
         $upload_file    = $upload_dir . '/' . $filename;
@@ -287,8 +293,14 @@ class ProductImageController extends Controller
 
         $resize['w']    = $config['resize'][0];
         $resize['h']    = $config['resize'][1];
+        $image->resize($resize['w'], $resize['h'], function ($constraint) {
+            $constraint->aspectRatio();
+        });
 
-        $image->resize($resize['w'], $resize['h']);
+        $crop['w']      = $config['crop'][0];
+        $crop['h']      = $config['crop'][1];
+        $image->crop($crop['w'], $crop['h']);
+
         $image->save($upload_file);
 
         $filesize       = $image->filesize();
@@ -296,7 +308,7 @@ class ProductImageController extends Controller
 
         $image_product = [
             'name'          => $filename,
-            'filetype'      => $fileType,
+            'filetype'      => $filetype,
             'filesize'      => $filesize,
             'product_id'    => $product_id,
         ];
