@@ -78,7 +78,7 @@
 
         	<div class="slick-hot-product">
 			    <div>
-				    <h3><a href="#"><img src="../assets/images/hijab.jpg" alt=""></a></h3>
+				    <h3><a href="{{ url('/') }}"><img src="../assets/images/hijab.jpg" alt=""></a></h3>
 			    </div>
 			    <div>
 				    <h3><a href="#"><img src="../assets/images/hijab.jpg" alt=""></a></h3>
@@ -101,7 +101,7 @@
 	<!-- end:/hot-product -->
 
 	<!-- start:popular-product -->
-	<div class="popular-product">
+	<!-- <div class="popular-product">
 		<div class="container">
 			<div class="popular-product-title">
 				<img src="../assets/images/icon/bookmark.svg" alt="">
@@ -129,7 +129,8 @@
 			    </div>
 			</div>
         </div>
-	</div>
+	</div> -->
+	<popular></popular>
 	<!-- end:/popular-product -->
 @stop
 
