@@ -17,7 +17,8 @@ return [
     'product_image'	=> [
     	'dir'		=> public_path('app/product_images'),
         'url'       => url('/app/product_images/'),
-    	'resize'	=> [300, 300]
+    	'resize'	=> [null, 380],
+        'crop'      => [285, 380]
     ],
     
     'email'     => [
