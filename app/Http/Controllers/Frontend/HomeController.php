@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return view('front.homepage');
     }
+
+    public function show()
+    {
+    	return view('front.product.show');
+    }
 }
