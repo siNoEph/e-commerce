@@ -61,7 +61,7 @@
 										<img src="{{ image_url }}/{{image.name}}" alt="">
 										<div class="caption-overflow">
 											<span>
-												<a href="{{ image_url }}/{{image.name}}" data-popup="lightbox" rel="gallery" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-plus3"></i></a>
+												<a href="{{ image_url }}/{{image.name}}" data-popup="lightbox" rel="gallery" class="btn border-white text-white btn-flat btn-icon btn-rounded"><i class="icon-eye4"></i></a>
 												<a href="#" v-on:click="deleteImage(image)" class="btn border-white text-white btn-flat btn-icon btn-rounded ml-5"><i class="icon-trash" title="delete"></i></a>
 											</span>
 										</div>
@@ -98,7 +98,7 @@
 								<div class="form-group">
 			                    	<label class="control-label col-lg-4">Images</label>
 									<div class="col-lg-8">
-										<input class="btn btn-default btn-xs" type="file" id="images" name="images[]" v-el="fileInput" multiple/>
+										<input class="btn btn-default btn-xs" type="file" id="images" name="images[]" v-el="fileInput" v-model="" multiple/>
 									</div>
 			                    </div>
 
@@ -447,39 +447,36 @@
 				var imgFile = document.getElementById('images');
 				for (var i = 0; i<imgFile.files.length; i++){
 					if (imgFile.files[i]) {
-						if (imgFile.files[i].size > 100000) {
-							alert('Ukuran gambar terlalu besar, ukuran gambar harus < 100kb')
-						} else {
-						    var reader 		= new FileReader();
-						    reader.onload = function(event) {
-						        var dataUri 		= event.target.result;
-						        var productImage 	= {
-						        	product_id: product.id,
-						        	base64_image: dataUri
-						        }
-						        that.$http.post('products/image', productImage).then(function (response) {
-									console.log(response.data)
-									console.log('======================================================')
-									productImage 	= null
-									dataUri 		= null
-									if (response.data.status == 'success') {
-										alert("Upload gambar berhasil")
-									} else {
-										alert ("Upload gambar gagal")
-									}
-								}, function (response) {
-									console.log('error')
-									console.log(response)
-								})
-						   };
-						   reader.onerror = function(event) {
-						       console.error("File could not be read! Code " + event.target.error.code);
-						   };
-						   reader.readAsDataURL(imgFile.files[i]);
-						}
+					    var reader 		= new FileReader();
+					    reader.onload = function(event) {
+					        var dataUri 		= event.target.result;
+					        var productImage 	= {
+					        	product_id: product.id,
+					        	base64_image: dataUri
+					        }
+					        that.$http.post('products/image', productImage).then(function (response) {
+								console.log(response.data)
+								console.log('======================================================')
+								productImage 	= null
+								dataUri 		= null
+								if (response.data.status == 'success') {
+									alert("Upload gambar berhasil")
+								} else {
+									alert ("Upload gambar gagal")
+								}
+							}, function (response) {
+								console.log('error')
+								console.log(response)
+							})
+					   };
+					   reader.onerror = function(event) {
+					       console.error("File could not be read! Code " + event.target.error.code);
+					   };
+					   reader.readAsDataURL(imgFile.files[i]);
 					}
 				}
 				$('#modal_newImages').modal('hide');
+				document.getElementById('images').value = "";
 			},
 
 			viewImages(product) {
