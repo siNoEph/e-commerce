@@ -16,7 +16,7 @@
                 </div>
             </div>
         	<div class="container">
-        		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        		<div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
 					<div class="content-popular-supplier">
 						<a href="#" class="thumbnail">
 							<img src="../assets/images/1.jpg" alt="">
@@ -27,7 +27,8 @@
 						</a>
 					</div>
                 </div>
-                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
                 	<div class="content-popular-supplier">
 						<a href="#" class="thumbnail">
 							<img src="../assets/images/1.jpg" alt="">
@@ -38,7 +39,8 @@
 						</a>
 					</div>
                 </div>
-                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
                 	<div class="content-popular-supplier">
 						<a href="#" class="thumbnail">
 							<img src="../assets/images/1.jpg" alt="">
@@ -49,7 +51,56 @@
 						</a>
 					</div>
                 </div>
-                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                <div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
+                	<div class="content-popular-supplier">
+						<a href="#" class="thumbnail">
+							<img src="../assets/images/1.jpg" alt="">
+							<div class="price">
+								<p>IDR 300.000,-</p>
+								<h4>Batik popular masa kini dan masa akan datang</h4>
+							</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="content-popular-supplier">
+						<a href="#" class="thumbnail">
+							<img src="../assets/images/1.jpg" alt="">
+							<div class="price">
+								<p>IDR 300.000,-</p>
+								<h4>Batik popular masa kini dan masa akan datang</h4>
+							</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
+                	<div class="content-popular-supplier">
+						<a href="#" class="thumbnail">
+							<img src="../assets/images/1.jpg" alt="">
+							<div class="price">
+								<p>IDR 300.000,-</p>
+								<h4>Batik popular masa kini dan masa akan datang</h4>
+							</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
+                	<div class="content-popular-supplier">
+						<a href="#" class="thumbnail">
+							<img src="../assets/images/1.jpg" alt="">
+							<div class="price">
+								<p>IDR 300.000,-</p>
+								<h4>Batik popular masa kini dan masa akan datang</h4>
+							</div>
+						</a>
+					</div>
+                </div>
+                
+                <div class="col-sm-3 col-md-3 col-sm-6 col-xs-12">
                 	<div class="content-popular-supplier">
 						<a href="#" class="thumbnail">
 							<img src="../assets/images/1.jpg" alt="">
