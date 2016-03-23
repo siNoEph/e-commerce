@@ -10,7 +10,7 @@
  * #5.FOOTER  
  **/
 
-@import url('../fonts/opensans/style.css')
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700)
 
 $white: #FFF
 $black: #000
@@ -62,7 +62,7 @@ $padding-left: 5px
 /* #1.GENERAL */
 body
 	background-color: $white
-	font-family: Roboto, sans-serif
+	+fonts('Roboto')
 
 .container
 	max-width: 980px
@@ -570,7 +570,7 @@ header
 
 	#header-content
 		background-color: $white
-		border-bottom: 1px solid $grey-black
+		border-bottom: 1px solid $dark
 
 		.navbar-nav
 			font-weight: 600
@@ -704,7 +704,7 @@ header
 
 // CONTENT-LOGIN
 #content-login
-	background: url(../assets/images/lil_fiber.png)
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAIElEQVQIW2NcO3OtZHB68HMGNAASZ0QXROYPiCQ+1wIA8J8MIJcsRXEAAAAASUVORK5CYII=)
 
 	ul
 		list-style: none
@@ -944,6 +944,11 @@ header
 			padding: $padding + 5
 			margin-bottom: $margin-bottom + 20
 
+			.rating-container
+				text-align: center
+				.caption
+					display: none
+
 			.widget-heading
 				h3
 					padding: $padding + 5
@@ -997,6 +1002,7 @@ header
 
 					.input-group
 						margin-top: $margin-top + 5
+						z-index: 0
 
 					.input-group-btn
 						width: 0px
