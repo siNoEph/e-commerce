@@ -64,6 +64,7 @@ $padding-left: 5px
 body
 	background-color: $white
 	+fonts('Roboto')
+	color: #6D6D6D
 
 .container
 	max-width: 980px
@@ -73,7 +74,7 @@ h3
 
 *
 	a
-		color: $aspalt-light
+		color: #6D6D6D
 
 .btn-primary
 	font-weight: 600
@@ -1104,8 +1105,11 @@ header
 			li
 				list-style-type: none
 				a
-					text-decoration: none
-					color: $aspalt
+					color: #6D6D6D
+					+transition(0.3s)
+					&:hover
+						+transition(0.3s)
+						color: $aspalt
 
 	.footer-bottom
 		padding: $padding + 5
