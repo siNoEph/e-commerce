@@ -1,0 +1,69 @@
+/* Author 	: Septian Noerhadi Pratama
+ * Twitter 	: @siNoEph
+ * Version 	: 1.0
+ *  
+ * #1. System Checkout
+ * 
+ */
+/* From app.sass */
+/* My Style */
+.bg-grey {
+  background-color: #F6F6F6; }
+
+.bg-white {
+  background-color: #FFF; }
+
+.border-solid-grey {
+  border: 2px solid #DDDDDD; }
+
+.margin-top {
+  margin-top: 30px; }
+
+.margin-bottom {
+  margin-bottom: 30px; }
+
+.padding-15 {
+  padding: 15px; }
+
+.bold {
+  font-weight: bold; }
+
+.font-12 {
+  font-size: 12px; }
+
+.font-24 {
+  font-size: 24px; }
+
+.align-middle {
+  vertical-align: middle !important; }
+
+img.img-list-shopping {
+  max-width: 65px; }
+
+img.img-shipping {
+  max-height: 90px; }
+
+h3.blue, td.blue {
+  color: #1489AC; }
+
+tr.no-border td {
+  border: none !important; }
+
+tr.border-top {
+  border-top: 1px solid #ddd; }
+
+input.custom-placeholder::-webkit-input-placeholder {
+  font-style: italic; }
+
+input.custom-placeholder::-moz-placeholder {
+  font-style: italic; }
+
+input.custom-placeholder:-ms-input-placeholder {
+  font-style: italic; }
+
+input.custom-placeholder:-moz-placeholder {
+  font-style: italic; }
+
+/* #1. System Checkout */
+
+/*# sourceMappingURL=app2.css.map */
