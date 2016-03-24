@@ -320,6 +320,8 @@ header {
       height: 35px;
       border-radius: 100%; }
   header #navbar-main .navbar-cart {
+    position: relative;
+    z-index: 2;
     min-height: 0px;
     background-color: #243143;
     -webkit-border-radius: 0px;
