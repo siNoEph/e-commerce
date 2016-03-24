@@ -12,7 +12,8 @@
 /* #1.GENERAL */
 body {
   background-color: #FFF;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #6D6D6D; }
 
 .container {
   max-width: 980px; }
@@ -21,7 +22,7 @@ h3 {
   margin-top: 10px; }
 
 * a {
-  color: #293648; }
+  color: #6D6D6D; }
 
 .btn-primary {
   font-weight: 600;
@@ -1044,8 +1045,17 @@ header {
       .footer .footer-content ul li {
         list-style-type: none; }
         .footer .footer-content ul li a {
-          text-decoration: none;
-          color: #243143; }
+          color: #6D6D6D;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          .footer .footer-content ul li a:hover {
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            color: #243143; }
   .footer .footer-bottom {
     padding: 10px; }
     .footer .footer-bottom p {
