@@ -1,8 +1,8 @@
-/* Author 	: Septian Noerhadi Pratama
+/**
+ *
+ * Author 	: Septian Noerhadi Pratama
  * Twitter 	: @siNoEph
  * Version 	: 1.0
- *  
- * #1. System Checkout
  * 
  */
 /* From app.sass */
@@ -21,6 +21,9 @@
 
 .margin-bottom {
   margin-bottom: 30px; }
+
+.no-padding-top {
+  padding-top: 0px !important; }
 
 .padding-15 {
   padding: 15px; }
@@ -64,6 +67,27 @@ input.custom-placeholder:-ms-input-placeholder {
 input.custom-placeholder:-moz-placeholder {
   font-style: italic; }
 
-/* #1. System Checkout */
+.history-trans input.search-product {
+  z-index: 0; }
+
+.history-trans .row div {
+  margin-top: 10px; }
+
+.modal-content {
+  border-radius: 0px !important; }
+
+.modal-body .content-popular-supplier {
+  max-width: 70% !important;
+  margin: 0 auto; }
+
+.modal-body .close {
+  opacity: 1;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 100%;
+  color: #fff;
+  top: -30px;
+  position: relative;
+  right: -30px; }
 
 /*# sourceMappingURL=app2.css.map */

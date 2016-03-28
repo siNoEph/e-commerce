@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="../bower_components/slick-carousel/slick/slick-theme.css">
 		<link rel="stylesheet" href="../stylesheets/slick-custom.css">
 		<link rel="stylesheet" href="../stylesheets/app.css">
+		<link rel="stylesheet" href="../stylesheets/app2.css">
 		<link rel="stylesheet" href="../stylesheets/responsive.css">
 		<!-- end:/stylesheet -->
 	</head>
@@ -253,15 +254,62 @@
 			<div class="container">
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">Library</a></li>
-					<li class="active">Data</li>
+					<li><a href="#">Manage Order Online</a></li>
+					<li class="active">Transaction History</li>
 				</ol>
+				
 				<!-- start:main-content -->
-				<div class="main-content">
+				<div class="popular-supplier no-padding-top history-trans">
 					<div class="row">
-						ISINYA
+						<h2 class="col-lg-6">Transaction History</h2>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control search-product" placeholder="Search product here" aria-describedby="search-product">
+								<span class="input-group-addon" id="search-product">
+									<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								</span>
+							</div>
+						</div>
 					</div>
-				</div>
+					<hr>
+	                <!-- start:item transaction-history -->
+            		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<div class="content-popular-supplier">
+							<a href="#" class="thumbnail" data-toggle="modal" data-target="#showItem">
+								<img src="../assets/images/1.jpg" alt="">
+								<div class="price">
+									<p>IDR 300.000,-</p>
+									<h4>Batik popular masa kini dan masa akan datang</h4>
+								</div>
+							</a>
+						</div>
+                    </div>
+                    <div class="modal fade" id="showItem" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<div class="content-popular-supplier">
+										<a href="#" class="thumbnail">
+											<img src="../assets/images/1.jpg" alt="">
+											<div class="price">
+												<p>IDR 300.000,-</p>
+												<h4>HAODUOYI Women Mid Lenght Hoodies</h4>
+											</div>
+										</a>
+									</div>
+									<!-- <div class="col-lg-6"> -->
+										<p>Name Item : HAODUOYI Women Mid Lenght Hoodies</p>
+										<p>Count Item : 2pcs</p>
+										<p>Total Payment Item : IDR 600.000</p>
+										<p>Status Shiping : Delivered</p>
+									<!-- </div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+                    <!-- end:/item transaction-history -->
+	            </div>
 				<!-- end:/main-content -->
 			</div>
 		</section>
